@@ -1,0 +1,201 @@
+body {
+    background-color: #f7F9F9;
+    color: #121212;
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+}
+
+.table-container {
+    margin: 20px 0;
+    background-color: #FDFEFE;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.title {
+    text-align: left;
+    color: rgb(29,24,91);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgb(29,24,91);
+}
+
+th {
+    background-color: #FDFEFE;
+}
+
+tr:hover {
+    background-color: #F7F9F9;
+}
+
+.btn {
+    padding: 7px 12px;
+    background-color: #3b82f6;
+    border: none;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-delete {
+    background-color: #ef4444;
+}
+
+.btn-delete:hover {
+    background-color: #e73636;
+}
+
+.btn-edit {
+    background-color: #3b82f6;
+}
+
+.btn-container {
+    text-align: right;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pagination .btn{
+    font-size: 12px;
+    background-color: transparent;
+}
+
+/* .search-container {
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center; 
+    margin-bottom: 10px;
+    width: 200px;
+  } */
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+
+label {
+    display: block;
+    margin: 8px 0 3px 0;
+}
+
+input[type="text"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 3px 0 8px 0;
+    background-color: #FDFEFE;
+    border: 1px solid rgb(29,24,91);
+    color: #000;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3b82f6;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+/* Filtros */
+.table-container .search-container {
+    display: flex;
+    justify-content: flex-start; /* Alinea los elementos a la izquierda */
+    align-items: center; /* Centra los elementos verticalmente */
+    margin-bottom: 10px;
+}
+
+.table-container .search-container .search-input {
+    width: 20em; /* Ajusta el ancho según sea necesario */
+    padding: 9px 13px;
+    border-radius: 4px;
+    border: 1px solid rgb(29,24,91);
+    margin-left: 10px;
+    background-color: #FDFEFE;
+    color: #121212;
+}
+
+.table-container .btn-filter {
+    padding: 7px 15px;
+    background-color: transparent;
+    border: rgb(29, 24, 91);
+    color: rgb(29,24,91);
+    text-align: center;
+    font-size: 15px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: .5s ease;
+}
+
+.table-container .btn-filter:hover{
+    background-color: rgb(29, 24, 91);
+    color: #f7F9F9;
+    border: rgb(29, 24, 91);
+}
+
+.table-container .btn-filter i {
+    margin-right: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu .dropdown-item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
